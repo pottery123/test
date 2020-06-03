@@ -1,8 +1,18 @@
-const prompt = require('prompt-sync')({sigint: true});
 
-const num= prompt("Enter some numbers");
+// convert whoe dollar amounts
+// input == number ones to thousands
+// parse number and map it to words {}
+// once number is parsed and mapped to correct words return a string with the value return sixty nine dollars only
 
-console.log('Your number + 4 =');
 
-console.log(Number(num) + 4);
+
+
+const convertWholeDollarAmounts = (dollarAmount) => {
+    const words = {
+        '1': 'one'
+    }
+
+     return words[dollarAmount]
+}
+
 
